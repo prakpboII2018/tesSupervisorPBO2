@@ -13,6 +13,7 @@ public class Klinik {
     private String idKlinik;
     private String nama;
 /**
+     * @return 
 **@
 */
     public String getIdKlinik() {
