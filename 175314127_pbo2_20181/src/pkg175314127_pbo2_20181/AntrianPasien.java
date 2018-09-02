@@ -36,16 +36,28 @@ public class AntrianPasien {
         return BulanAntrian;
     }
 
-    public void setBulanAntrian(int BulanAntrian) {
-        this.BulanAntrian = BulanAntrian;
+    public void setBulanAntrian(int BulanAntrian)throws Exception {
+        if (BulanAntrian > 0) {
+            if (BulanAntrian < 13) {
+                this.BulanAntrian = BulanAntrian;
+            }else  {
+                System.out.println("Bulan Antrian tidak wajar");
+            }
+        }else{
+            System.out.println("Bulan Antrian tidak boleh nol");
+        }
     }
 
     public int getTahunAntrian() {
         return TahunAntrian;
     }
 
-    public void setTahunAntrian(int TahunAntrian) {
-        this.TahunAntrian = TahunAntrian;
+    public void setTahunAntrian(int TahunAntrian)throws Exception {
+        if (TahunAntrian > 0 ) {
+            this.TahunAntrian = TahunAntrian;
+        }else{
+            System.out.println("tahun tidak boleh nol");
+        }
     }
 
     public Klinik getKlinik() {
