@@ -13,5 +13,6 @@ public class AntrianPasien {
     private int TanggalAntrian;
     private int BulanAntrian;
     private int TahunAntrian;
-    
+    private Klinik klinik;
+    private Pasien[] daftarPasien;
 }
