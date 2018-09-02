@@ -85,8 +85,12 @@ public class Pasien {
         return TahunLahir;
     }
 
-    public void setTahunLahir(int TahunLahir) {
-        this.TahunLahir = TahunLahir;
+    public void setTahunLahir(int TahunLahir) throws Exception {
+        if (TahunLahir > 0 ) {
+            this.TahunLahir = TahunLahir;
+        }else{
+            System.out.println("Tahun Lahir tidak boleh nol");
+        }
     }
    
    
