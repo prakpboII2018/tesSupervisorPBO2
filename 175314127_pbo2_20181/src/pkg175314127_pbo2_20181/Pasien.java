@@ -69,8 +69,16 @@ public class Pasien {
         return BulanLahir;
     }
 
-    public void setBulanLahir(int BulanLahir) {
-        this.BulanLahir = BulanLahir;
+    public void setBulanLahir(int BulanLahir) throws Exception {
+        if (BulanLahir > 0 ) {
+            if (BulanLahir <= 12) {
+                this.BulanLahir = BulanLahir;
+            }else{
+                System.out.println("Bulan Lahir tidak wajar");
+            }
+        }else{
+            System.out.println("Bulan Lahir tidak boleh nol");
+        }
     }
 
     public int getTahunLahir() {
