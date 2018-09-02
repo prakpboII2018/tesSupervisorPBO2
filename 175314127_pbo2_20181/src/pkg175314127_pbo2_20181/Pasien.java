@@ -53,8 +53,16 @@ public class Pasien {
         return TanggalLahir;
     }
 
-    public void setTanggalLahir(int TanggalLahir) {
-        this.TanggalLahir = TanggalLahir;
+    public void setTanggalLahir(int TanggalLahir) throws Exception {
+        if (TanggalLahir > 0) {           
+            if (TanggalLahir < 32) {
+                this.TanggalLahir = TanggalLahir;
+            }else{
+                System.out.println("Tanggal Lahir tidak wajar");
+            }
+        }else{
+            System.out.println("Tanggal Lahir tidak boleh nol");
+        }
     }
 
     public int getBulanLahir() {
