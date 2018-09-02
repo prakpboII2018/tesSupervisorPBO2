@@ -12,7 +12,9 @@ package pkg175314127_pbo2_20181;
 public class Klinik {
     private String idKlinik;
     private String nama;
-
+/**
+**@
+*/
     public String getIdKlinik() {
         return idKlinik;
     }
