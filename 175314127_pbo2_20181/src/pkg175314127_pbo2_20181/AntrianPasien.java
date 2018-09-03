@@ -10,6 +10,12 @@ package pkg175314127_pbo2_20181;
  * @author Alexander Adam
  */
 public class AntrianPasien {
+    /**
+     * Deklarasi variabel TanggalAntrian, BulanAntrian, TahunAntrian dengan
+     * tipe  int (Interger)
+     * Asosiasi variable klinik ke class Klinik
+     * Asosiasi variabel daftarPasien ke class Pasien dengan Array
+     */
     private int TanggalAntrian;
     private int BulanAntrian;
     private int TahunAntrian;
@@ -25,10 +31,10 @@ public class AntrianPasien {
             if (TanggalAntrian < 32) {
                 this.TanggalAntrian = TanggalAntrian;
             }else{
-                System.out.println("Tanggal Antrian tidak Sesuai");
+                throw new Exception("Tanggal Antrian tidak Sesuai");
             }
         }else{
-            System.out.println("Tanggal Antrian tidak boleh nol");
+            throw new Exception("Tanggal Antrian tidak boleh nol");
         }
     }
 
@@ -41,10 +47,10 @@ public class AntrianPasien {
             if (BulanAntrian < 13) {
                 this.BulanAntrian = BulanAntrian;
             }else  {
-                System.out.println("Bulan Antrian tidak wajar");
+                throw new Exception("Bulan Antrian tidak wajar");
             }
         }else{
-            System.out.println("Bulan Antrian tidak boleh nol");
+            throw new Exception("Bulan Antrian tidak boleh nol");
         }
     }
 
@@ -56,7 +62,7 @@ public class AntrianPasien {
         if (TahunAntrian > 0 ) {
             this.TahunAntrian = TahunAntrian;
         }else{
-            System.out.println("tahun tidak boleh nol");
+            throw new Exception("tahun tidak boleh nol");
         }
     }
 
