@@ -20,6 +20,7 @@ public class Pasien {
    private int TanggalLahir;
    private int BulanLahir;
    private int TahunLahir;
+   public Pasien(){}
 
    /**
     * Terdapat Getter getNoRekamMedis bertipe String yang berfungsi 
