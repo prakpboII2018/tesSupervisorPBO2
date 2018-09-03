@@ -9,7 +9,7 @@ package pkg175314127_pbo2_20181;
  *
  * @author Alexander Adam
  */
-public class AntrianPasien extends  Pasien{
+public class AntrianPasien {
     /**
      * Deklarasi variabel TanggalAntrian, BulanAntrian, TahunAntrian dengan
      * tipe  int (Interger)
@@ -31,6 +31,13 @@ public class AntrianPasien extends  Pasien{
         return TanggalAntrian;
     }
 
+    /**
+     * Method Setter yang memberikan nilai pada variable TanggalAntrian
+     * Terdapat throws Exception yang akan berjalan jika Program terdajadi kesalahan
+     * throw new berfungsi untuk membuat instance baru dari Exception
+     * @param TanggalAntrian
+     * @throws Exception 
+     */
     public void setTanggalAntrian(int TanggalAntrian) throws Exception{
         if (TanggalAntrian > 0 ) {
             if (TanggalAntrian < 32) {
@@ -52,6 +59,13 @@ public class AntrianPasien extends  Pasien{
         return BulanAntrian;
     }
 
+    /**
+     * Method Setter yang memberikan nilai pada variable BulanAntrian
+     * Terdapat throws Exception yang akan berjalan jika Program terdajadi kesalahan
+     * throw new berfungsi untuk membuat instance baru dari Exception
+     * @param BulanAntrian
+     * @throws Exception 
+     */
     public void setBulanAntrian(int BulanAntrian)throws Exception {
         if (BulanAntrian > 0) {
             if (BulanAntrian < 13) {
@@ -73,6 +87,13 @@ public class AntrianPasien extends  Pasien{
         return TahunAntrian;
     }
 
+    /**
+     * Method Setter yang memberikan nilai pada variable TahunAntrian
+     * Terdapat throws Exception yang akan berjalan jika Program terdajadi kesalahan
+     * throw new berfungsi untuk membuat instance baru dari Exception
+     * @param TahunAntrian
+     * @throws Exception 
+     */
     public void setTahunAntrian(int TahunAntrian)throws Exception {
         if (TahunAntrian > 0 ) {
             this.TahunAntrian = TahunAntrian;
@@ -101,7 +122,11 @@ public class AntrianPasien extends  Pasien{
     public Pasien[] getDaftarPasien() {
         return daftarPasien;
     }
-
+    
+/**
+ * Method Setter yang memberikan nilai pada variable DaftarPasien
+ * @param daftarPasien 
+ */
     public void setDaftarPasien(Pasien[] daftarPasien) {
         this.daftarPasien = daftarPasien;
     }
