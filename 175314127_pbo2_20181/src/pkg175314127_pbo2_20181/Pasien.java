@@ -10,13 +10,22 @@ package pkg175314127_pbo2_20181;
  * @author Alexander Adam
  */
 public class Pasien {
-   private String noRekamMedis;
+ /**
+ *Deklarasi variabel noRekammedis,nama,alamat,tempatLahir dengan tipe String dan
+ * TanggalLahir,BulanLahir,TahunLahir bertipe interger
+ */
+   private String noRekamMedis; 
    private String nama,alamat;
    private String TempatLahir;
    private int TanggalLahir;
    private int BulanLahir;
    private int TahunLahir;
 
+   /**
+    * Terdapat Getter getNoRekamMedis bertipe String yang berfungsi 
+    * mengembalikan nilai objek yang sudah berisi variable noRekamMedis
+     * @return 
+    */
     public String getNoRekamMedis() {
         return noRekamMedis;
     }
@@ -24,7 +33,11 @@ public class Pasien {
     public void setNoRekamMedis(String noRekamMedis) {
         this.noRekamMedis = noRekamMedis;
     }
-
+/**
+ * Terdapat Getter getNama bertipe String yang berfungsi mengembalikan nilai 
+ * objek yang sudah berisi variable nama
+     * @return 
+ */
     public String getNama() {
         return nama;
     }
@@ -32,7 +45,11 @@ public class Pasien {
     public void setNama(String nama) {
         this.nama = nama;
     }
-
+/**
+ * Terdapat Getter getAlamat bertipe String yang berfungsi mengembalikan nilai 
+ * objek yang sudah berisi variable alamat
+ * @return 
+ */
     public String getAlamat() {
         return alamat;
     }
@@ -40,7 +57,11 @@ public class Pasien {
     public void setAlamat(String alamat) {
         this.alamat = alamat;
     }
-
+/**
+ * Terdapat Getter getTempatLahir bertipe  String yang berfungsi mengembalikan
+ * nilai objek yang sudah berisi variable tempatLahir
+ * @return 
+ */
     public String getTempatLahir() {
         return TempatLahir;
     }
@@ -48,7 +69,11 @@ public class Pasien {
     public void setTempatLahir(String TempatLahir) {
         this.TempatLahir = TempatLahir;
     }
-
+/**
+ * Terdapat Getter getTanggalLahir bertipe Int yang berfungsi mengembalikan 
+ * nilai objek yang sudah berisi variable TanggalLahir
+ * @return 
+ */
     public int getTanggalLahir() {
         return TanggalLahir;
     }
@@ -65,6 +90,11 @@ public class Pasien {
         }
     }
 
+    /**
+     * Terdapat Getter getBulanLahir bertipe int yang berfungsi 
+     * mengembalikan nilai objek yang sudah berisi variable BullanLahir
+     * @return 
+     */
     public int getBulanLahir() {
         return BulanLahir;
     }
@@ -81,6 +111,11 @@ public class Pasien {
         }
     }
 
+    /**
+     * Terdapat Getter getTahunLahir bertipe int yang berfungsi mengembalikan
+     * nilai objek yang sudah berisi variable TahunLahir
+     * @return 
+     */
     public int getTahunLahir() {
         return TahunLahir;
     }
