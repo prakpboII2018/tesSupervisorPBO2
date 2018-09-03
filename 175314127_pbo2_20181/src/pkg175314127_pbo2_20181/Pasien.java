@@ -83,10 +83,10 @@ public class Pasien {
             if (TanggalLahir < 32) {
                 this.TanggalLahir = TanggalLahir;
             }else{
-                System.out.println("Tanggal Lahir tidak wajar");
+                throw new Exception("Tanggal Lahir tidak wajar");
             }
         }else{
-            System.out.println("Tanggal Lahir tidak boleh nol");
+            throw new Exception("Tanggal Lahir tidak boleh nol");
         }
     }
 
@@ -104,10 +104,10 @@ public class Pasien {
             if (BulanLahir <= 12) {
                 this.BulanLahir = BulanLahir;
             }else{
-                System.out.println("Bulan Lahir tidak wajar");
+                throw new Exception("Bulan Lahir tidak wajar");
             }
         }else{
-            System.out.println("Bulan Lahir tidak boleh nol");
+            throw new Exception("Bulan Lahir tidak boleh nol");
         }
     }
 
@@ -124,7 +124,7 @@ public class Pasien {
         if (TahunLahir > 0 ) {
             this.TahunLahir = TahunLahir;
         }else{
-            System.out.println("Tahun Lahir tidak boleh nol");
+            throw new Exception("Tahun Lahir tidak boleh nol");
         }
     }
    
