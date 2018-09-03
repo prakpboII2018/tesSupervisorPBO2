@@ -13,6 +13,7 @@ public class Pasien {
  /**
  *Deklarasi variabel noRekammedis,nama,alamat,tempatLahir dengan tipe String dan
  * TanggalLahir,BulanLahir,TahunLahir bertipe interger
+ * dan semua variabel bersifat private
  */
    private String noRekamMedis; 
    private String nama,alamat;

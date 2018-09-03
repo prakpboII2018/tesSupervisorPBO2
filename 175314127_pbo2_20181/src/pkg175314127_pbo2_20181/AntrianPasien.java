@@ -15,6 +15,7 @@ public class AntrianPasien {
      * tipe  int (Interger)
      * Asosiasi variable klinik ke class Klinik
      * Asosiasi variabel daftarPasien ke class Pasien dengan Array
+     * dan semua variabel bersifat private
      */
     private int TanggalAntrian;
     private int BulanAntrian;
