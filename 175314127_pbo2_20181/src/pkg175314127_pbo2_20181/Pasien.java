@@ -30,6 +30,10 @@ public class Pasien {
         return noRekamMedis;
     }
 
+    /**
+     * Method Setter yang memberikan nilai pada variable noRekamMedis
+     * @param noRekamMedis 
+     */
     public void setNoRekamMedis(String noRekamMedis) {
         this.noRekamMedis = noRekamMedis;
     }
@@ -42,6 +46,10 @@ public class Pasien {
         return nama;
     }
 
+    /**
+     * Method Setter yang memberikan nilai pada variable nama
+     * @param nama 
+     */
     public void setNama(String nama) {
         this.nama = nama;
     }
@@ -54,6 +62,10 @@ public class Pasien {
         return alamat;
     }
 
+    /**
+     * Method Setter yang memberikan nilai pada variable alamat
+     * @param alamat 
+     */
     public void setAlamat(String alamat) {
         this.alamat = alamat;
     }
@@ -66,6 +78,10 @@ public class Pasien {
         return TempatLahir;
     }
 
+    /**
+     * Method Setter yang memberikan nilai pada variable TempatLahir
+     * @param TempatLahir 
+     */
     public void setTempatLahir(String TempatLahir) {
         this.TempatLahir = TempatLahir;
     }
@@ -77,7 +93,13 @@ public class Pasien {
     public int getTanggalLahir() {
         return TanggalLahir;
     }
-
+/**
+ * Method Setter yang memberikan nilai pada variable TanggalLahir
+ * Terdapat throws Exception yang akan berjalan jika Program terdajadi kesalahan
+ * throw new berfungsi untuk membuat instance baru dari Exception
+ * @param TanggalLahir
+ * @throws Exception 
+ */
     public void setTanggalLahir(int TanggalLahir) throws Exception {
         if (TanggalLahir > 0) {           
             if (TanggalLahir < 32) {
@@ -98,7 +120,14 @@ public class Pasien {
     public int getBulanLahir() {
         return BulanLahir;
     }
-
+    
+/**
+ * Method Setter yang memberikan nilai pada variable BulanLahir
+ * Terdapat throws Exception yang akan berjalan jika Program terdajadi kesalahan
+ * throw new berfungsi untuk membuat instance baru dari Exception
+ * @param BulanLahir
+ * @throws Exception 
+ */
     public void setBulanLahir(int BulanLahir) throws Exception {
         if (BulanLahir > 0 ) {
             if (BulanLahir <= 12) {
@@ -120,6 +149,13 @@ public class Pasien {
         return TahunLahir;
     }
 
+    /**
+     * Method Setter yang memberikan nilai pada variable TahunLahir
+     * Terdapat throws Exception yang akan berjalan jika Program terdajadi kesalahan
+     * throw new berfungsi untuk membuat instance baru dari Exception
+     * @param TahunLahir
+     * @throws Exception 
+     */
     public void setTahunLahir(int TahunLahir) throws Exception {
         if (TahunLahir > 0 ) {
             this.TahunLahir = TahunLahir;
