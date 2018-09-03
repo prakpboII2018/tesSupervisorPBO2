@@ -22,6 +22,11 @@ public class AntrianPasien extends  Pasien{
     private Klinik klinik;
     private Pasien[] daftarPasien;
 
+    /**
+     * Terdapat Getter getTanggalAntrian bertipe int yang berfungsi mengembalikan nilai 
+     * objek yang sudah berisi variable TanggalAntrian
+     * @return 
+     */
     public int getTanggalAntrian() {
         return TanggalAntrian;
     }
@@ -38,6 +43,11 @@ public class AntrianPasien extends  Pasien{
         }
     }
 
+    /**
+     * Terdapat Getter getBulanAntrian bertipe int yang berfungsi mengembalikan
+     * nilai objek yang sudah berisi variable BulanAntrian
+     * @return 
+     */
     public int getBulanAntrian() {
         return BulanAntrian;
     }
@@ -54,6 +64,11 @@ public class AntrianPasien extends  Pasien{
         }
     }
 
+    /**
+     * Terdapat Getter getTahunAntrian bertipe int yang berfungsi mengembalikan
+     * nilai objek yang sudah berisi variable TahunAntrian
+     * @return 
+     */
     public int getTahunAntrian() {
         return TahunAntrian;
     }
@@ -66,6 +81,11 @@ public class AntrianPasien extends  Pasien{
         }
     }
 
+    /**
+     * Terdapat Getter getKlinik bertipe class Klinik yang berfungsi 
+     * mengembalikan nilai objek yang sudah berisi variable klinik
+     * @return 
+     */
     public Klinik getKlinik() {
         return klinik;
     }
@@ -73,7 +93,11 @@ public class AntrianPasien extends  Pasien{
     public void setKlinik(Klinik klinik) {
         this.klinik = klinik;
     }
-
+/**
+ * Terdapat Getter getDaftarPasien bertipe class Pasien dengan array yang 
+ * berfungsi mengembalikan nilai objek yang sudah berisi variable daftarPasien
+ * @return 
+ */
     public Pasien[] getDaftarPasien() {
         return daftarPasien;
     }
