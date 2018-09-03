@@ -9,7 +9,7 @@ package pkg175314127_pbo2_20181;
  *
  * @author Alexander Adam
  */
-public class AntrianPasien {
+public class AntrianPasien extends  Pasien{
     /**
      * Deklarasi variabel TanggalAntrian, BulanAntrian, TahunAntrian dengan
      * tipe  int (Interger)
