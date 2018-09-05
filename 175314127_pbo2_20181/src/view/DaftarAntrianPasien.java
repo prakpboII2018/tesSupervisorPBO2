@@ -35,16 +35,17 @@ public class DaftarAntrianPasien extends JDialog{
         this.add(judulLabel);
         
         namaLabel= new JLabel("nama :");
-        namaLabel.setBounds(60,100,100,50);
+        namaLabel.setBounds(60,120,100,50);
         this.add(namaLabel);
         
-        
-      
+        namaLabel = new JLabel("No Rekam Medis : ");
+        namaLabel.setBounds(60, 100, 120, 50);
+        this.add(namaLabel);
     }
     public void Text(){
               
         namaText = new JTextField();
-        namaText.setBounds(105, 115,50,200);
+        namaText.setBounds(105, 135,50,200);
         namaText.setSize(50, 20);
         this.add(namaText);
     }
