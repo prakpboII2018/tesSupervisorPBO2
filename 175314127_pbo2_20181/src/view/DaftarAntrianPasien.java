@@ -12,7 +12,7 @@ import javax.swing.JTextField;
 
 /**
  *
- * @author admin
+ * @author Alexander Adam
  */
 public class DaftarAntrianPasien extends JDialog{
     private JLabel judulLabel;
@@ -24,5 +24,7 @@ public class DaftarAntrianPasien extends JDialog{
         this.setLayout(null);
         
         namaLabel = new JLabel("Daftar Pasien");
+        namaLabel.setBounds(100, 200 ,250 ,100);
+        this.add(judulLabel);
     }
 }
